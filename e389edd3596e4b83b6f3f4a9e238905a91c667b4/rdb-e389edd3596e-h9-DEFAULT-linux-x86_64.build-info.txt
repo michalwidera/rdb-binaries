@@ -1,0 +1,13 @@
+$ xretractor --build-info
+RDB_OPT_DEDUP_SUBSTRATES=ON
+RDB_OPT_SHARE_EQUIVALENT_SELECTS=ON
+RDB_OPT_COMMUTATIVE_ADD=ON
+RDB_OPT_FACTOR_MATCHED_HASH_TIMEMOVES=ON
+RDB_BENCH_PROBE=ON
+RDB_OPT_SIMPLIFY_EXPRESSIONS=ON
+$ xretractor --help | grep ^Branch:
+Branch: :e389edd3, Code compiler: GNU Ver. 14.2.0, Build time: 2611081553, Type: Release
+$ xqry --help | grep ^Branch:
+Branch: :e389edd3, Code compiler: GNU Ver. 14.2.0, Build time: 2611081553, Type: Release
+$ xtrdb --help | grep ^Branch:
+Branch: :e389edd3, Code compiler: GNU Ver. 14.2.0, Build time: 2611081553, Type: Release
